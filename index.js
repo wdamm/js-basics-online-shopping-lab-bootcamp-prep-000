@@ -61,12 +61,12 @@ if (test !== true) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber === 0) {
+  var num = total();
+  var crd = cardNumber;
+  if (crd === 0) {
     return "Sorry, we dont have a card on file for you.";
   } else {
     setCart(0);
-    var num = total();
-    var crd = cardNumber;
     return `Your total cost is ${num}, which will be charged to the card ${crd}.`;
     
   }
