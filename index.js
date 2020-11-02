@@ -61,7 +61,7 @@ if (test !== true) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber === "") {
+  if (cardNumber === 0) {
     return "Sorry, we dont have a card on file for you.";
   } else {
     setCart(0);
