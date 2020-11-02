@@ -67,7 +67,7 @@ function placeOrder(cardNumber) {
     return "Sorry, we dont have a card on file for you.";
   } else {
     setCart(0);
-    return `Your total cost is ${num}, which will be charged to the card ${crd}.`;
+    return `Your total cost is $${num}, which will be charged to the card ${crd}.`;
     
   }
   
