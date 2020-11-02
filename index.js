@@ -63,7 +63,7 @@ if (test !== true) {
 function placeOrder(cardNumber) {
   var num = total();
   var crd = cardNumber;
-  if (crd === 0) {
+  if (!crd) {
     return "Sorry, we dont have a card on file for you.";
   } else {
     setCart(0);
